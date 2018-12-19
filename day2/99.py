@@ -7,13 +7,11 @@
     #         c=i*j
     #         print(i,"x",j,"=",c,"입니다.")
         
-with open("gugudan.txt","w") as file:
-    for i in range(2,10):
-        for j in range(2,10):
-            line = f"{i}*{j}={i*j}\n"
-            file.write(line)
-
-
+# with open("gugudan.txt","w") as file:
+#     for i in range(2,10):
+#         for j in range(2,10):
+#             line = f"{i}*{j}={i*j}\n"
+#             file.write(line)
 
 # a=range(2,10)
 # for i in a:

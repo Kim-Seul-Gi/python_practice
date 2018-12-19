@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>드라마 보기</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>{{pick}} ㄱㄱ!</h1>
+    {% if pick == "뷰티인사이드" %}
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/r9Jt6oEsfwE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <img src="http://fs.jtbc.joins.com/prog/drama/beautyinside/Img/site/Main/20181121092247.jpg" width="300" height="100">
+    <h2>12시까지만 보자</h2>
+    {% else %}
+    <img src="{{pick_url}}">
+    <h2>주말에 봐라</h2>
+    {% endif %}
+
+    <hr>
+    드라마 리스트는 이거였어.
+    {% for list in drama %}
+        <p>{{list}}</p>
+    {% endfor %}
+</body>
+</html>

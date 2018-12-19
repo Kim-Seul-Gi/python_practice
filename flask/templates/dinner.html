@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>저녁메뉴추천받기</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>{{menu}} 먹어!</h1>
+    {% if menu == "피자" %}
+    <h2>오늘은 굶자</h2>
+    {% else %}
+    <h2>맛점</h2>
+    {% endif %}
+
+    <hr>
+    저녁 리스트는 이거였어.
+    {% for food in dinner %}
+        <p>{{food}}</p>
+    {% endfor %}
+</body>
+</html>
