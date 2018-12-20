@@ -108,7 +108,7 @@
 # print(type(prices))
 
 # prices_list = prices.split(";") # split 으로 문자열 나누기 가능함.
-# prices_int = []
+# prices_int = []f
 # for i in prices_list:
 #     prices_int.append(int(i)) # 문자열(str)을 list로 바꾸기 위해서는 for를 사용하자.
 # prices_int_sort = sorted(prices_int, reverse=True)
